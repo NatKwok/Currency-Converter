@@ -1,0 +1,47 @@
+﻿<Application x:Class="Currency_Converter.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Currency_Converter"
+             StartupUri="MainWindow.xaml">
+    Title="Currency Converter" Height="260" Width="497">
+
+
+    <Grid>
+        <Label Height="25.96" HorizontalAlignment="Left" Margin="14.0066666666667,25.04,0,0" 
+
+    Name="label1" VerticalAlignment="Top" Width="98.9933333333333" 
+
+    Grid.ColumnSpan="2">From Currency:</Label>
+        <Label Height="25.96" HorizontalAlignment="Left" Margin="15.0066666666667,60.04,0,0" 
+
+    Name="label2" VerticalAlignment="Top" Width="83.9933333333333" 
+
+    Grid.ColumnSpan="2">To Currency:</Label>
+        <ComboBox Height="26" Margin="150,25,23,0" Name="cmbFromCurrency" 
+                    VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="3">
+
+            <ComboBoxItem>$ USD</ComboBoxItem>
+            <ComboBoxItem>$ CAD</ComboBoxItem>
+            <ComboBoxItem>Euros</ComboBoxItem>
+            <ComboBoxItem>Rupees</ComboBoxItem>
+        </ComboBox>
+
+
+        <ComboBox Height="26" Margin="150,62,24,0" Name="cmbToCurrency" 
+                VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="3">
+
+            <ComboBoxItem>$ USD</ComboBoxItem>
+            <ComboBoxItem>$ CAD</ComboBoxItem>
+            <ComboBoxItem>Euros</ComboBoxItem>
+            <ComboBoxItem>Rupees</ComboBoxItem>
+        </ComboBox>
+
+        <Button Margin="350,0,25,100" 
+                Name="btnConvert" Grid.Column="3" 
+                Height="28.7397769516729" VerticalAlignment="Bottom">Convert</Button>
+
+        <TextBox Margin="22,0,17,25.3940520446097" Name="txtResults" Grid.ColumnSpan="4" 
+                Height="59.4758364312266" Grid.RowSpan="3" VerticalAlignment="Bottom"></TextBox>
+
+    </Grid>
+</Application>
